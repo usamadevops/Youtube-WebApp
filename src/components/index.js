@@ -3,5 +3,8 @@ import ChannelDetail from "./ChannelDetail";
 import SearchFeed from "./SearchFeed";
 import VideoDetail from "./VideoDetail";
 import Navbar from "./Navbar";
-
-export { Feed,ChannelDetail,SearchFeed,VideoDetail,Navbar};
+import Videos from "./elements/Videos";
+import Sidebar from "./Sidebar";
+import ChannelCard from "./elements/ChannelCard";
+import VideoCard from "./elements/VideoCard";
+export { Videos,ChannelCard,VideoCard,Sidebar,Feed,ChannelDetail,SearchFeed,VideoDetail,Navbar};
