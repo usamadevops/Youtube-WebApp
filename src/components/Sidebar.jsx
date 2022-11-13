@@ -3,13 +3,14 @@ import {Stack} from '@mui/material';
 
 import { categories } from '../utils/Constants';
 const Sidebar = ({selectedcategory,setselectedcategory}) => {
-    
   return (
 <Stack direction={"row"} sx={{overflow:'auto',height:{sx:'auto',md:'95%'},flexDirection:{md:'column'}}}>
 {
     categories.map((category)=>(
         <button
-        onClick={()=>setselectedcategory(category.name)}
+        onClick={()=>{
+            setselectedcategory(category.name);     
+        }}
         style={{
             background:category.name===selectedcategory&& '#fc1503',color:'white'
         }}
